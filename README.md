@@ -1,4 +1,4 @@
-# Ansible Role: supervisor3
+# Ansible Role: supervisor
 
 A brief description of the role goes here.
 

@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-supervisor3
+
 - name: Check supervisor installed
   shell: which supervisorctl
   register: checked_supervisorctl

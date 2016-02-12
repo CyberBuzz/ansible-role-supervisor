@@ -1,5 +1,8 @@
 ---
 
+- name: install libselinux-python
+  yum: name=libselinux-python state=present
+
 - name: Check supervisor installed
   shell: which supervisorctl
   register: checked_supervisorctl
@@ -65,7 +68,8 @@
     group: root
     mode: 0755
 
-- name: Start supervisor service
+- name: Enable supervisor service
+  sudo: yes
   service:
     name: supervisor
     state: started
